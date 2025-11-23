@@ -1,3 +1,4 @@
+# 🎬 Netflix Clone — React & TMDB Integration(Feature Build#3)
 <div align="center">
   <a href="http://netflix-clone-with-tmdb-using-react-mui.vercel.app/">
     <img src="./public/assets/netflix-logo.png" alt="Logo" width="100" height="32">
@@ -5,82 +6,245 @@
 
   <h3 align="center">Netflix Clone</h3>
 
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#prerequests">Prerequests</a>
-    </li>
-    <li>
-      <a href="#which-features-this-project-deals-with">Which features this project deals with</a>
-    </li>
-    <li><a href="#third-party-libraries-used-except-for-react-and-rtk">Third Party libraries used except for React and RTK</a></li>
-    <li>
-      <a href="#contact">Contact</a>
-    </li>
-  </ol>
-</details>
-
-<br />
-
-<div align="center">
-  <img src="./public/assets/home-page.png" alt="Logo" width="100%" height="100%">
-  <p align="center">Home Page</p>
-  <img src="./public/assets/mini-portal.png" alt="Logo" width="100%" height="100%">
-  <p align="center">Mini Portal</p>
-  <img src="./public/assets/detail-modal.png" alt="Logo" width="100%" height="100%">
-  <p align="center">Detail Modal</p>
-  <img src="./public/assets/grid-genre.png" alt="Logo" width="100%" height="100%">
-  <p align="center">Grid Genre Page</p>
-  <img src="./public/assets/watch.png" alt="Logo" width="100%" height="100%">
-  <p align="center">Watch Page with customer contol bar</p>
+  <p align="center">
+    <a href="https://netflix-clone-react-typescript.vercel.app/">View Demo</a>
+    ·
+    <a href="https://github.com/crazy-man22/netflix-clone-react-typescript/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/crazy-man22/netflix-clone-react-typescript/issues">Request Feature</a>
+  </p>
 </div>
 
-## Prerequests
+A modern Netflix clone built with React, TypeScript, and TMDB API, featuring infinite scrolling, custom hooks, and advanced React patterns.
 
-- Create an account if you don't have on [TMDB](https://www.themoviedb.org/).
-  Because I use its free API to consume movie/tv data.
-- And then follow the [documentation](https://developers.themoviedb.org/3/getting-started/introduction) to create API Key
-- Finally, if you use v3 of TMDB API, create a file named `.env`, and copy and paste the content of `.env.example`.
-  And then paste the API Key you just created.
+## ✨ Features
 
-## Which features this project deal with
+### Core Functionality
+- **🎬 Movie/TV Discovery**: Browse trending, popular, and genre-specific content
+- **🔍 Search & Filter**: Search movies and TV shows with real-time results
+- **📱 Responsive Design**: Optimized for desktop, tablet, and mobile devices
+- **🎥 Video Playback**: Custom video player with controls
+- **📊 Infinite Scrolling**: Load more content as you scroll using Intersection Observer
+- **🖼️ Modal Details**: Detailed view with trailers and cast information
 
-- How to create and use [Custom Hooks](https://reactjs.org/docs/hooks-custom.html)
-- How to use [Context](https://reactjs.org/docs/context.html) and its provider
-- How to use lazy and Suspense for [Code-Splitting](https://reactjs.org/docs/code-splitting.html)
-- How to use a new [lazy](https://reactrouter.com/en/main/route/lazy) feature of react-router to reduce bundle size.
-- How to use data [loader](https://reactrouter.com/en/main/route/loader) of react-router, and how to use redux dispatch in the loader to fetch data before rendering component.
-- How to use [Portal](https://reactjs.org/docs/portals.html)
-- How to use [Fowarding Refs](https://reactjs.org/docs/forwarding-refs.html) to make components reusuable
-- How to create and use [HOC](https://reactjs.org/docs/higher-order-components.html)
-- How to customize default theme of [MUI](https://mui.com/)
-- How to use [RTK](https://redux-toolkit.js.org/introduction/getting-started)
-- How to use [RTK Query](https://redux-toolkit.js.org/rtk-query/overview)
-- How to customize default classname of [MUI](https://mui.com/material-ui/experimental-api/classname-generator)
-- Infinite Scrolling(using [Intersection Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API))
-- How to make awesome carousel using [slick-carousel](https://react-slick.neostack.com)
+### Advanced Features
+- **⚡ Performance Optimized**: Code splitting, lazy loading, and efficient rendering
+- **🎨 Custom UI**: Material-UI theme customization with Netflix-inspired design
+- **🔄 State Management**: Redux Toolkit for complex state handling
+- **🌐 API Integration**: TMDB API for real movie data
+- **🎯 Advanced Patterns**: Custom hooks, HOCs, portals, and context providers
 
-## Third Party libraries used except for React and RTK
+### User Experience
+- **🎪 Smooth Animations**: Framer Motion for transitions and effects
+- **🎠 Carousel Sliders**: Slick carousel for content browsing
+- **📋 Portal Modals**: React portals for modal overlays
+- **⚡ Fast Loading**: Lazy routes and suspense for code splitting
 
-- [react-router-dom@v6.9](https://reactrouter.com/en/main)
-- [MUI(Material UI)](https://mui.com/)
-- [framer-motion](https://www.framer.com/docs/)
-- [video.js](https://videojs.com)
-- [react-slick](https://react-slick.neostack.com/)
+## 🛠️ Tech Stack
 
-## Install with Docker
+- **Frontend**: React 18 with TypeScript
+- **Routing**: React Router v6 with lazy loading and data loaders
+- **State Management**: Redux Toolkit & RTK Query
+- **UI Library**: Material-UI (MUI) with custom theming
+- **Animations**: Framer Motion
+- **Video Player**: Video.js
+- **Carousel**: React Slick
+- **Build Tool**: Vite
+- **API**: TMDB (The Movie Database)
 
-```sh
+## 📂 File Structure
+
+```
+netflixclone/
+├── public/
+│   └── assets/          # Static assets (logo, images)
+├── src/
+│   ├── components/      # Reusable UI components
+│   ├── hooks/          # Custom React hooks
+│   ├── pages/          # Page components with lazy loading
+│   ├── store/          # Redux store and slices
+│   ├── utils/          # Utility functions
+│   ├── App.tsx         # Main app component
+│   └── main.tsx        # App entry point
+├── .env.example        # Environment variables template
+├── package.json        # Dependencies and scripts
+├── vite.config.ts      # Build configuration
+└── README.md           # Project documentation
+```
+
+## ⚙️ How It Works
+
+### Advanced React Patterns
+The project demonstrates modern React development with:
+
+1. **Custom Hooks**: Reusable logic for API calls and state management
+2. **Context Providers**: Global state sharing without prop drilling
+3. **Code Splitting**: Lazy loading routes to reduce bundle size
+4. **Higher-Order Components**: Component composition and reusability
+5. **Forwarding Refs**: Making components more flexible
+
+### RTK Query Integration
+```typescript
+// Custom hook for fetching movies
+export const useGetMoviesQuery = (category: string) => {
+  return useQuery({
+    queryKey: ['movies', category],
+    queryFn: () => fetchMoviesFromTMDB(category),
+    staleTime: 5 * 60 * 1000, // 5 minutes
+  });
+};
+```
+
+### Infinite Scrolling Implementation
+```typescript
+// Using Intersection Observer for infinite scroll
+const observer = new IntersectionObserver(
+  (entries) => {
+    if (entries[0].isIntersecting && hasNextPage) {
+      fetchNextPage();
+    }
+  },
+  { threshold: 0.1 }
+);
+```
+
+## 🚀 Quick Start
+
+### Prerequisites
+- Node.js 16+
+- TMDB API Key (free from [TMDB](https://www.themoviedb.org/))
+
+### Installation
+```bash
+# Clone the repository
+git clone https://github.com/crazy-man22/netflix-clone-react-typescript.git
+cd netflix-clone-react-typescript
+
+# Install dependencies
+npm install
+
+# Set up environment variables
+cp .env.example .env
+# Add your TMDB API key to .env
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+```
+
+### Docker Installation
+```bash
+# Build with API key
 docker build --build-arg TMDB_V3_API_KEY=your_api_key_here -t netflix-clone .
 
+# Run the container
 docker run --name netflix-clone-website --rm -d -p 80:80 netflix-clone
 ```
 
-## Todo
+## 🎨 Customization
 
-- Make the animation of video card portal more similar to Netflix.
-- Improve performance. I am using `context` and `provider` but all components subscribed to the context's value are re-rendered. These re-renders happen even if the part of the value is not used in render of the component. there are [several ways](https://blog.axlight.com/posts/4-options-to-prevent-extra-rerenders-with-react-context/) to prevent the re-renders from these behaviours. In addition to them, there may be several performance issues.
-- Replace bundler([Vite](https://vitejs.dev/guide)) with [Turbopack](https://turbo.build/pack/docs/why-turbopack). Turbopack is introduced in Next.js conf recently. It's very fast but it's nor ready to use right now. it just support Next.js, and they plan to support all others as soon as possible. so if it's ready to use, replace [Vite](https://vitejs.dev/guide) with [Turbopack](https://turbo.build/pack/docs/why-turbopack).
-- Add accessibilities for better UX.
-- Add Tests.
+### Theme Customization
+Modify MUI theme in `src/theme.ts`:
+```typescript
+export const theme = createTheme({
+  palette: {
+    primary: {
+      main: '#e50914', // Netflix red
+    },
+    background: {
+      default: '#141414', // Netflix black
+    },
+  },
+  // Add customizations
+});
+```
+
+### Adding New Features
+- **New Pages**: Create components in `src/pages/` and add routes in `App.tsx`
+- **API Endpoints**: Extend RTK Query slices in `src/store/`
+- **Components**: Add reusable components in `src/components/`
+
+## 📊 Performance Optimizations
+
+- **Code Splitting**: Route-based and component-based splitting
+- **Lazy Loading**: Images and components loaded on demand
+- **Memoization**: React.memo and useMemo for expensive operations
+- **Bundle Analysis**: Optimized imports and tree shaking
+
+## 🔧 Development
+
+### Available Scripts
+```bash
+npm run dev      # Start development server
+npm run build    # Build for production
+npm run preview  # Preview production build
+npm run lint     # Run ESLint
+```
+
+### Environment Variables
+```env
+VITE_TMDB_V3_API_KEY=your_tmdb_api_key_here
+VITE_TMDB_BASE_URL=https://api.themoviedb.org/3
+```
+
+## 📝 API Reference
+
+### TMDB Endpoints Used
+- `/movie/popular` - Popular movies
+- `/movie/top_rated` - Top rated movies
+- `/tv/popular` - Popular TV shows
+- `/search/multi` - Multi-search for movies/TV
+- `/movie/{id}/videos` - Movie trailers
+
+### Custom Hooks
+- `useGetMoviesQuery` - Fetch movies by category
+- `useInfiniteScroll` - Handle infinite scrolling
+- `useModal` - Modal state management
+
+## ⚠️ Limitations & Future Enhancements
+
+### Current Limitations
+- Requires TMDB API key for full functionality
+- Client-side only (no backend authentication)
+- Basic error handling for API failures
+
+### Planned Features
+- [ ] User authentication and profiles
+- [ ] Watchlist and favorites
+- [ ] Social features (reviews, ratings)
+- [ ] Offline viewing capabilities
+- [ ] Advanced search filters
+- [ ] Performance improvements (Turbopack migration)
+- [ ] Accessibility enhancements
+- [ ] Comprehensive test suite
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to:
+- Report bugs and issues
+- Suggest new features
+- Submit pull requests
+- Improve documentation
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+**Built with ❤️ using modern React and TypeScript**
+
+<div align="center">
+  <img src="./public/assets/home-page.png" alt="Home Page" width="100%" height="100%">
+  <p align="center">Home Page</p>
+  <img src="./public/assets/mini-portal.png" alt="Mini Portal" width="100%" height="100%">
+  <p align="center">Mini Portal</p>
+  <img src="./public/assets/detail-modal.png" alt="Detail Modal" width="100%" height="100%">
+  <p align="center">Detail Modal</p>
+  <img src="./public/assets/grid-genre.png" alt="Grid Genre Page" width="100%" height="100%">
+  <p align="center">Grid Genre Page</p>
+  <img src="./public/assets/watch.png" alt="Watch Page" width="100%" height="100%">
+  <p align="center">Watch Page with custom control bar</p>
+</div>
