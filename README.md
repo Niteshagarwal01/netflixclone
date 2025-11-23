@@ -1,89 +1,133 @@
-# 🎬 Netflix Clone — React & TMDB Integration(Feature Build#3)
+
 <div align="center">
   <a href="http://netflix-clone-with-tmdb-using-react-mui.vercel.app/">
-    <img src="./public/assets/netflix-logo.png" alt="Logo" width="100" height="32">
+    <img src="./public/assets/netflix-logo.png" alt="Logo" width="200">
   </a>
 
-  <h3 align="center">Netflix Clone</h3>
+  <h1>Netflix Clone</h1>
 
-  <p align="center">
-    <a href="https://netflix-clone-react-typescript.vercel.app/">View Demo</a>
-    ·
-    <a href="https://github.com/crazy-man22/netflix-clone-react-typescript/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/crazy-man22/netflix-clone-react-typescript/issues">Request Feature</a>
+  <p>
+    A modern Netflix clone built with React, TypeScript, and TMDB API, featuring infinite scrolling, custom hooks, and advanced React patterns.
+  </p>
+
+  <p>
+    <a href="#-features">Features</a> •
+    <a href="#-tech-stack">Tech Stack</a> •
+    <a href="#-quick-start">Quick Start</a> •
+    <a href="#-development">Development</a> •
+    <a href="#-screenshots">Screenshots</a>
   </p>
 </div>
 
-A modern Netflix clone built with React, TypeScript, and TMDB API, featuring infinite scrolling, custom hooks, and advanced React patterns.
+<br />
+
+## 📸 Screenshots
+
+<div align="center">
+  <img src="./public/assets/home-page.png" alt="Home Page" width="800">
+  <p><em>Home Page</em></p>
+</div>
+
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="./public/assets/mini-portal.png" alt="Mini Portal" width="400">
+      <br /><em>Mini Portal</em>
+    </td>
+    <td align="center">
+      <img src="./public/assets/detail-modal.png" alt="Detail Modal" width="400">
+      <br /><em>Detail Modal</em>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="./public/assets/grid-genre.png" alt="Grid Genre" width="400">
+      <br /><em>Grid Genre Page</em>
+    </td>
+    <td align="center">
+      <img src="./public/assets/watch.png" alt="Watch Page" width="400">
+      <br /><em>Watch Page with Custom Controls</em>
+    </td>
+  </tr>
+</table>
+
+---
 
 ## ✨ Features
 
 ### Core Functionality
-- **🎬 Movie/TV Discovery**: Browse trending, popular, and genre-specific content
-- **🔍 Search & Filter**: Search movies and TV shows with real-time results
-- **📱 Responsive Design**: Optimized for desktop, tablet, and mobile devices
-- **🎥 Video Playback**: Custom video player with controls
-- **📊 Infinite Scrolling**: Load more content as you scroll using Intersection Observer
-- **🖼️ Modal Details**: Detailed view with trailers and cast information
+* **🎬 Movie/TV Discovery**: Browse trending, popular, and genre-specific content.
+* **🔍 Search & Filter**: Search movies and TV shows with real-time results.
+* **📱 Responsive Design**: Optimized for desktop, tablet, and mobile devices.
+* **🎥 Video Playback**: Custom video player with controls.
+* **📊 Infinite Scrolling**: Load more content as you scroll using Intersection Observer.
+* **🖼️ Modal Details**: Detailed view with trailers and cast information.
 
 ### Advanced Features
-- **⚡ Performance Optimized**: Code splitting, lazy loading, and efficient rendering
-- **🎨 Custom UI**: Material-UI theme customization with Netflix-inspired design
-- **🔄 State Management**: Redux Toolkit for complex state handling
-- **🌐 API Integration**: TMDB API for real movie data
-- **🎯 Advanced Patterns**: Custom hooks, HOCs, portals, and context providers
+* **⚡ Performance Optimized**: Code splitting, lazy loading, and efficient rendering.
+* **🎨 Custom UI**: Material-UI theme customization with Netflix-inspired design.
+* **🔄 State Management**: Redux Toolkit for complex state handling.
+* **🌐 API Integration**: TMDB API for real movie data.
+* **🎯 Advanced Patterns**: Custom hooks, HOCs, portals, and context providers.
 
 ### User Experience
-- **🎪 Smooth Animations**: Framer Motion for transitions and effects
-- **🎠 Carousel Sliders**: Slick carousel for content browsing
-- **📋 Portal Modals**: React portals for modal overlays
-- **⚡ Fast Loading**: Lazy routes and suspense for code splitting
+* **🎪 Smooth Animations**: Framer Motion for transitions and effects.
+* **🎠 Carousel Sliders**: Slick carousel for content browsing.
+* **📋 Portal Modals**: React portals for modal overlays.
+* **⚡ Fast Loading**: Lazy routes and suspense for code splitting.
+
+---
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: React 18 with TypeScript
-- **Routing**: React Router v6 with lazy loading and data loaders
-- **State Management**: Redux Toolkit & RTK Query
-- **UI Library**: Material-UI (MUI) with custom theming
-- **Animations**: Framer Motion
-- **Video Player**: Video.js
-- **Carousel**: React Slick
-- **Build Tool**: Vite
-- **API**: TMDB (The Movie Database)
+| Area | Technology |
+| :--- | :--- |
+| **Frontend** | React 18, TypeScript |
+| **Routing** | React Router v6 (Lazy Loading, Data Loaders) |
+| **State** | Redux Toolkit, RTK Query |
+| **UI Library** | Material-UI (MUI) |
+| **Animations** | Framer Motion |
+| **Video Player** | Video.js |
+| **Build Tool** | Vite |
+| **API** | TMDB (The Movie Database) |
+
+---
 
 ## 📂 File Structure
 
-```
+```bash
 netflixclone/
 ├── public/
 │   └── assets/          # Static assets (logo, images)
 ├── src/
 │   ├── components/      # Reusable UI components
-│   ├── hooks/          # Custom React hooks
-│   ├── pages/          # Page components with lazy loading
-│   ├── store/          # Redux store and slices
-│   ├── utils/          # Utility functions
-│   ├── App.tsx         # Main app component
-│   └── main.tsx        # App entry point
-├── .env.example        # Environment variables template
-├── package.json        # Dependencies and scripts
-├── vite.config.ts      # Build configuration
-└── README.md           # Project documentation
-```
+│   ├── hooks/           # Custom React hooks
+│   ├── pages/           # Page components with lazy loading
+│   ├── store/           # Redux store and slices
+│   ├── utils/           # Utility functions
+│   ├── App.tsx          # Main app component
+│   └── main.tsx         # App entry point
+├── .env.example         # Environment variables template
+├── package.json         # Dependencies and scripts
+├── vite.config.ts       # Build configuration
+└── README.md            # Project documentation
+````
+
+-----
 
 ## ⚙️ How It Works
 
 ### Advanced React Patterns
+
 The project demonstrates modern React development with:
 
-1. **Custom Hooks**: Reusable logic for API calls and state management
-2. **Context Providers**: Global state sharing without prop drilling
-3. **Code Splitting**: Lazy loading routes to reduce bundle size
-4. **Higher-Order Components**: Component composition and reusability
-5. **Forwarding Refs**: Making components more flexible
+1.  **Custom Hooks**: Reusable logic for API calls and state management.
+2.  **Context Providers**: Global state sharing without prop drilling.
+3.  **Code Splitting**: Lazy loading routes to reduce bundle size.
+4.  **Higher-Order Components**: Component composition and reusability.
 
 ### RTK Query Integration
+
 ```typescript
 // Custom hook for fetching movies
 export const useGetMoviesQuery = (category: string) => {
@@ -96,6 +140,7 @@ export const useGetMoviesQuery = (category: string) => {
 ```
 
 ### Infinite Scrolling Implementation
+
 ```typescript
 // Using Intersection Observer for infinite scroll
 const observer = new IntersectionObserver(
@@ -108,33 +153,45 @@ const observer = new IntersectionObserver(
 );
 ```
 
+-----
+
 ## 🚀 Quick Start
 
 ### Prerequisites
-- Node.js 16+
-- TMDB API Key (free from [TMDB](https://www.themoviedb.org/))
+
+  * Node.js 16+
+  * TMDB API Key (Free from [TMDB](https://www.themoviedb.org/))
 
 ### Installation
-```bash
-# Clone the repository
-git clone https://github.com/crazy-man22/netflix-clone-react-typescript.git
-cd netflix-clone-react-typescript
 
-# Install dependencies
-npm install
+1.  **Clone the repository**
 
-# Set up environment variables
-cp .env.example .env
-# Add your TMDB API key to .env
+    ```bash
+    git clone [https://github.com/crazy-man22/netflix-clone-react-typescript.git](https://github.com/crazy-man22/netflix-clone-react-typescript.git)
+    cd netflix-clone-react-typescript
+    ```
 
-# Start development server
-npm run dev
+2.  **Install dependencies**
 
-# Build for production
-npm run build
-```
+    ```bash
+    npm install
+    ```
+
+3.  **Set up environment variables**
+
+    ```bash
+    cp .env.example .env
+    # Open .env and add your TMDB API key
+    ```
+
+4.  **Start development server**
+
+    ```bash
+    npm run dev
+    ```
 
 ### Docker Installation
+
 ```bash
 # Build with API key
 docker build --build-arg TMDB_V3_API_KEY=your_api_key_here -t netflix-clone .
@@ -143,10 +200,14 @@ docker build --build-arg TMDB_V3_API_KEY=your_api_key_here -t netflix-clone .
 docker run --name netflix-clone-website --rm -d -p 80:80 netflix-clone
 ```
 
+-----
+
 ## 🎨 Customization
 
 ### Theme Customization
+
 Modify MUI theme in `src/theme.ts`:
+
 ```typescript
 export const theme = createTheme({
   palette: {
@@ -157,94 +218,63 @@ export const theme = createTheme({
       default: '#141414', // Netflix black
     },
   },
-  // Add customizations
 });
 ```
 
-### Adding New Features
-- **New Pages**: Create components in `src/pages/` and add routes in `App.tsx`
-- **API Endpoints**: Extend RTK Query slices in `src/store/`
-- **Components**: Add reusable components in `src/components/`
+### Environment Variables
+
+Create a `.env` file in the root directory:
+
+```env
+VITE_TMDB_V3_API_KEY=your_tmdb_api_key_here
+VITE_TMDB_BASE_URL=[https://api.themoviedb.org/3](https://api.themoviedb.org/3)
+```
+
+-----
 
 ## 📊 Performance Optimizations
 
-- **Code Splitting**: Route-based and component-based splitting
-- **Lazy Loading**: Images and components loaded on demand
-- **Memoization**: React.memo and useMemo for expensive operations
-- **Bundle Analysis**: Optimized imports and tree shaking
+  * **Code Splitting**: Route-based and component-based splitting.
+  * **Lazy Loading**: Images and components loaded on demand.
+  * **Memoization**: `React.memo` and `useMemo` for expensive operations.
+  * **Bundle Analysis**: Optimized imports and tree shaking.
 
-## 🔧 Development
+-----
 
-### Available Scripts
-```bash
-npm run dev      # Start development server
-npm run build    # Build for production
-npm run preview  # Preview production build
-npm run lint     # Run ESLint
-```
+## ⚠️ Limitations & Roadmap
 
-### Environment Variables
-```env
-VITE_TMDB_V3_API_KEY=your_tmdb_api_key_here
-VITE_TMDB_BASE_URL=https://api.themoviedb.org/3
-```
+**Current Limitations**
 
-## 📝 API Reference
+  * Requires TMDB API key for full functionality.
+  * Client-side only (no backend authentication).
+  * Basic error handling for API failures.
 
-### TMDB Endpoints Used
-- `/movie/popular` - Popular movies
-- `/movie/top_rated` - Top rated movies
-- `/tv/popular` - Popular TV shows
-- `/search/multi` - Multi-search for movies/TV
-- `/movie/{id}/videos` - Movie trailers
+**Planned Features**
 
-### Custom Hooks
-- `useGetMoviesQuery` - Fetch movies by category
-- `useInfiniteScroll` - Handle infinite scrolling
-- `useModal` - Modal state management
+  * [ ] User authentication and profiles
+  * [ ] Watchlist and favorites
+  * [ ] Social features (reviews, ratings)
+  * [ ] Offline viewing capabilities
+  * [ ] Comprehensive test suite
 
-## ⚠️ Limitations & Future Enhancements
-
-### Current Limitations
-- Requires TMDB API key for full functionality
-- Client-side only (no backend authentication)
-- Basic error handling for API failures
-
-### Planned Features
-- [ ] User authentication and profiles
-- [ ] Watchlist and favorites
-- [ ] Social features (reviews, ratings)
-- [ ] Offline viewing capabilities
-- [ ] Advanced search filters
-- [ ] Performance improvements (Turbopack migration)
-- [ ] Accessibility enhancements
-- [ ] Comprehensive test suite
+-----
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please feel free to:
-- Report bugs and issues
-- Suggest new features
-- Submit pull requests
-- Improve documentation
+Contributions are welcome\! Please feel free to:
+
+1.  Report bugs and issues.
+2.  Suggest new features.
+3.  Submit pull requests.
 
 ## 📄 License
 
-This project is open source and available under the [MIT License](LICENSE).
+This project is open source and available under the [MIT License](https://www.google.com/search?q=LICENSE).
 
----
+-----
 
-**Built with ❤️ using modern React and TypeScript**
+\<div align="center"\>
+\<b\>Built with ❤️ using modern React and TypeScript\</b\>
+\</div\>
 
-<div align="center">
-  <img src="./public/assets/home-page.png" alt="Home Page" width="100%" height="100%">
-  <p align="center">Home Page</p>
-  <img src="./public/assets/mini-portal.png" alt="Mini Portal" width="100%" height="100%">
-  <p align="center">Mini Portal</p>
-  <img src="./public/assets/detail-modal.png" alt="Detail Modal" width="100%" height="100%">
-  <p align="center">Detail Modal</p>
-  <img src="./public/assets/grid-genre.png" alt="Grid Genre Page" width="100%" height="100%">
-  <p align="center">Grid Genre Page</p>
-  <img src="./public/assets/watch.png" alt="Watch Page" width="100%" height="100%">
-  <p align="center">Watch Page with custom control bar</p>
-</div>
+
