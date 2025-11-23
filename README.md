@@ -1,5 +1,6 @@
 # Netflix Clone — Tutorial & Reference(Feature Build#1)
-<img alt="netflix-clone-screenshot" src="https://user-images.githubusercontent.com/placeholder/netflix-screenshot.png" width="1200" />
+
+<img width="2816" height="1536" alt="Gemini_Generated_Image_3yl3uf3yl3uf3yl3" src="https://github.com/user-attachments/assets/05699ea9-6fa5-4d57-95f4-d2b6962caaa6" />
 
 This is a small Netflix-style landing page clone (static frontend) that demonstrates common UI patterns: hero area, call-to-action, FAQ accordion, language dropdown, and a multi-step signup flow. The code is plain HTML/CSS/JavaScript and is designed as a learning project.
 
